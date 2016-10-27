@@ -1,0 +1,13 @@
+<h2>Welcome to Rails..................................</h2>
+
+<%= form_tag do %>
+<%= label_tag(:q, "Search for:") %><br />
+  <%= text_field_tag(:q) %><br />
+  <%= check_box_tag(:pet_dog) %><br />
+<%= label_tag(:pet_dog, "I own a dog") %><br />
+<%= check_box_tag(:pet_cat) %><br />
+<%= label_tag(:pet_cat, "I own a cat") %><br />
+<%= month_field(:user, :birthday_month) %>
+<%= color_field(:user, :favorite_color) %>
+  <%= submit_tag("Search") %><br />
+<% end %>
